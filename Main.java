@@ -47,6 +47,12 @@ public class Main
     System.out.println("Problem 4: ");
     System.out.println("Enter a positive integer: ");
     int valInput = sc.nextInt();
-    
+    if (valInput > 0){
+      for (int n = valInput-1; n >= 0; n-=3){
+        System.out.print(n + " ");
+      }
+    } else {
+      System.out.println("error");
+    }
   }
 }
